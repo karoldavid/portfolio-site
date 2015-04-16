@@ -181,6 +181,31 @@ main,
 
 /*
  *
+ * effects
+ *
+ */
+
+.featured-work img {
+  opacity: 1;
+}
+
+.featured-work img:hover {
+  cursor: pointer;
+
+  /* outline */
+  outline: 1px solid blue;
+  outline-offset: 5px;
+
+  /* opacity */
+  opacity: 0.5;
+  transition: opacity .2s ease-out;
+  -moz-transition: opacity .2s ease-out;
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+}
+
+/*
+ *
  * media queries
  *
  */
