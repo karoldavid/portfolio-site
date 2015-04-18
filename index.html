@@ -15,33 +15,54 @@
 
     <header class="header">
       <div class="header__inner">
-        <img class="header__logo" src="images/logo.svg" alt="logo">
+        <img id="logo" src="images/logo.svg" alt="logo">
         <h1>Karol Zyskowski</h1>
         <h4>Front-End Ninja</h4>
       </div>
     </header>
+
     <main>
       <div style='clear: both;'></div>
 
       <picture id="banner">
-        <img src="images/abstract-q-g-1600-666-4.jpg" alt="banner">
+        <source media="(min-width:750px)" srcset="images/banner-1600_large_2x.jpg 2x, images/banner-800_large_1x.jpg">
+        <source media="(min-width:500px)" srcset="images/banner-1000_medium_2x.jpg 2x, images/banner-500_medium_1x.jpg">
+        <img src="images/banner.jpg" alt="banner">
       </picture>
 
       <article class="content">
         <section class="featured-work">
           <h2>Featured Work</h2>
           <figure class="work">
-            <a href="http://karoldavid.github.io/movie-poster-blog" title="Movie Poster Gallery"><img src="images/abstract-q-c-1200-800-8.jpg" alt="Project 1"></a>
+            <a href="http://karoldavid.github.io/movie-poster-blog" title="Movie Poster Gallery">
+              <picture>
+                <source media="(min-width:750px)" srcset="images/abstract1-1600_large_2x.jpg 2x, images/abstract1-800_large_1x.jpg">
+                <source media="(min-width:500px)" srcset="images/abstract1-1000_medium_2x.jpg 2x, images/abstract1-500_medium_1x.jpg">
+                <img src="images/abstract1.jpg" alt="Project 1">
+              </picture>
+            </a>
             <figcaption>Movie Poster Gallery</figcaption>
             <a href="http://karoldavid.github.io/movie-poster-blog" title="Movie Poster Gallery">http://karoldavid.github.io/movie-poster-blog/</a>
           </figure>
           <figure class="work">
-            <a href="http://www.susanne-fuelscher.de/" title="Responsive Website"><img src="images/abstract-q-c-1200-800-7.jpg" alt="Project 2"></a>
+            <a href="http://www.susanne-fuelscher.de/" title="Responsive Website">
+              <picture>
+                <source media="(min-width:750px)" srcset="images/abstract2-1600_large_2x.jpg 2x, images/abstract2-800_large_1x.jpg">
+                <source media="(min-width:500px)" srcset="images/abstract2-1000_medium_2x.jpg 2x, images/abstract2-500_medium_1x.jpg">
+                <img src="images/abstract2.jpg" alt="Project 2">
+              </picture>
+            </a>
             <figcaption>Responsive Website</figcaption>
             <a href="http://www.susanne-fuelscher.de/" title="Responsive Website">http://www.susanne-fuelscher.de/</a>
           </figure>
           <figure class="work">
-            <a href="http://karoldavid.github.io/interactive-resume/" title="Interactive Resume"><img src="images/abstract-q-c-1200-800-2.jpg" alt="Project 2"></a>
+            <a href="http://karoldavid.github.io/interactive-resume/" title="Interactive Resume">
+              <picture>
+                <source media="(min-width:750px)" srcset="images/abstract3-1600_large_2x.jpg 2x, images/abstract3-800_large_1x.jpg">
+                <source media="(min-width:500px)" srcset="images/abstract3-1000_medium_2x.jpg 2x, images/abstract3-500_medium_1x.jpg">
+                <img src="images/abstract3.jpg" alt="Project 3">
+              </picture>
+            </a>
             <figcaption>Interactive Resume</figcaption>
             <a href="http://karoldavid.github.io/interactive-resume/" title="Interactive Resume">http://karoldavid.github.io/interactive-resume/</a>
           </figure>
